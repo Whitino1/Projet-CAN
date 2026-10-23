@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Facture</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style_facture.css">
+</head>
+<body>
+	<main>
+		<header>
+		<img src="img/CAN.png" alt="Logo"> 
+		</header> 
+		<h2>Facture</h2>
+		<br>
+		<section class="recherche">
+			<form id="formReservation">
+				<label for="id_res">Votre numéro de réservation : </label>
+				<input type="number" id="id_res" name="id_res">
+				<button type="submit">Valider</button>
+			</form>
+		</section>
+		<br>
+		<p id="dateAchat">Illkirch le 20/10/2025</p>
+		<br>
+		<p id="noReserv">Réservation n° : (inserer numéro de réservation)</p>
+		<p id="nomReserv">Nom de réservation : (inserer nom de famille)</p>
+		<br>
+		<p id="Trav">Traversée : (inserer traversée)</p>
+		<p id="dat">Date : (inserer date)</p>
+		<p id="dateDepart">Départ : (inserer date)</p>
+		<p id="Boat">Bateau : (inserer bateau)</p>
+		<br>
+		<section>
+		<p>Les Personnes</p>
+		<table>
+			<tr> 
+				<th>Catégorie</th>
+				<th>Nombre</th>
+				<th>Prix unitaire</th>
+				<th>Prix ligne</th>
+			</tr>
+			<tr>
+				<td id="TypePers">Adulte de 26 ans et plus</td>
+				<td id = "QtePers1">(inserer nombre de personnes)</td>
+				<td id="PrixUnitPers1">(prix Unit)</td>
+				<td id= "TotPers1">(inserer prix total)</td>
+			</tr>
+			<tr>
+				<td id="TypePers">Jeune de 18 à 25 ans inclus</td>
+				<td id = "QtePers2">(inserer nombre de personnes)</td>
+				<td id="PrixUnitPers2">(Prix Unit)</td>
+				<td id= "TotPers2">(inserer prix total)</td>
+			</tr>
+			<tr>			
+				<td id="TypePers">Enfant de 4 à 17 ans inclus</td>
+				<td id = "QtePers3">(inserer nombre de personnes)</td>
+				<td id="PrixUnitPers3">(Prix Unit)</td>
+				<td id= "TotPers3">(inserer prix total)</td>
+			</tr>
+			<tr>			
+				<td id="TypePers">Bébé moins de 4 ans</td>
+				<td id = "QtePers4">(inserer nombre de personnes)</td>
+				<td id="PrixUnitPers4">(inserer prix unit)</td>
+				<td id= "TotPers4">(inserer prix total)</td>
+			</tr>
+			<tr>			
+				<td id="TypePers">Animaux</td>
+				<td id = "QtePers5">(inserer nombre d'animaux)</td>
+				<td id="PrixUnitPers5">3.35</td>
+				<td id= "TotPers5">(inserer prix total)</td>
+			</tr>
+		</table>
+		<p class="right" id = "STPers">Sous total personnes : (inserer prix)</p>
+		<br>
+		<p>Les Vehicules</p>
+		<table>
+			<tbody id="tbodyVehicules"> <tr> 
+					<th>Catégorie</th>
+					<th>Quantité</th>
+					<th>Prix unitaire</th>
+					<th>Prix ligne</th>
+				</tr>
+				<tr>
+					<td id = "CategorieVehicule1">(Inserer categorie)</td>
+					<td id = "Qte1">(inserer qte)</td>
+					<td id="PrixUnitVehi1">(Tarif Vehi)</td>
+					<td id = "totVeh1">(inserer prix total)</td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="right" id = "STVehi">Sous total vehicules : (inserer prix)</p>
+		</section>
+		<p class="right total" id = "totalFinal"> Prix total : (inserer prix)</p>
+	</main>
+	<script src="facture (2).js"></script>
+</body>
+</html>
